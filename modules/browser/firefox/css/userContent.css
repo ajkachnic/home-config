@@ -1,0 +1,102 @@
+:root {
+    --moonlight-desaturated-gray: #7f85a3;
+    --moonlight-dark-blue: #4976eb;
+    --moonlight-blue: #82aaff;
+    --moonlight-sky-blue: #50c4fa;
+    --moonlight-cyan: #86e1fc;
+    --moonlight-red: #ff757f;
+    --moonlight-dark-red: #ff5370;
+    --moonlight-light-red: #ff98a4;
+    --moonlight-yellow: #ffc777;
+    --moonlight-orange: #ff966c;
+    --moonlight-dark-orange: #fc7b7b;
+    --moonlight-teal: #4fd6be;
+    --moonlight-green: #c3e88d;
+    --moonlight-purple: #c099ff;
+    --moonlight-pink: #fca7ea;
+    --moonlight-indigo: #7a88cf;
+    --moonlight-bright-cyan: #b4f9f8;
+    --moonlight-gray-10-alt: #bcc4d6;
+    --moonlight-gray-10: #c8d3f5;
+    --moonlight-gray-9: #b4c2f0;
+    --moonlight-gray-8: #a9b8e8;
+    --moonlight-gray-7: #828bb8;
+    --moonlight-gray-6: #444a73;
+    --moonlight-gray-5: #2f334d;
+    --moonlight-gray-4: #222436;
+    --moonlight-gray-3: #1e2030;
+    --moonlight-gray-2: #191a2a;
+    --moonlight-gray-1: #131421;
+    
+    --scrollbar-chrome-size: 6px;
+}
+
+@-moz-document url(about:blank), url(about:newtab), url(about:home) {
+    html:not(#ublock0-epicker),
+    html:not(#ublock0-epicker) body,
+    #newtab-customize-overlay {
+        background: var(--moonlight-gray-2) !important;
+    }
+
+    .search-wrapper input {
+        background-color: var(--moonlight-gray-3) !important;
+        color: var(--moonlight-gray-7) !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .search-wrapper input:focus {
+        color: var(--moonlight-gray-9) !important;
+    }
+
+    .search-wrapper .search-button {
+        fill: var(--moonlight-gray-7) !important;
+    }
+
+    .search-wrapper .search-button:focus,
+    .search-wrapper .search-button:hover {
+        background-color: transparent !important;
+        fill: var(--moonlight-gray-9) !important;
+    }
+}
+
+/* Scrollbar */
+
+*:not(select) {
+    scrollbar-color: var(--moonlight-gray-5) var(--moonlight-gray-2) !important;
+    scrollbar-width: thin !important;
+}
+::-webkit-scrollbar,
+.integrations-select-repos::-webkit-scrollbar {
+    max-height: var(--scrollbar-chrome-size) !important;
+    max-width: var(--scrollbar-chrome-size) !important;
+}
+::-webkit-scrollbar,
+.integrations-select-repos::-webkit-scrollbar,
+::-webkit-scrollbar-corner,
+.integrations-select-repos::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track,
+.integrations-select-repos::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+.integrations-select-repos::-webkit-scrollbar-track-piece {
+    background: var(--moonlight-gray-2) !important;
+}
+::-webkit-scrollbar:hover,
+.integrations-select-repos::-webkit-scrollbar:hover,
+::-webkit-scrollbar-corner:hover,
+.integrations-select-repos::-webkit-scrollbar-corner:hover,
+::-webkit-scrollbar-track:hover,
+.integrations-select-repos::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track-piece:hover,
+.integrations-select-repos::-webkit-scrollbar-track-piece:hover {
+    background: var(--moonlight-gray-4) !important;
+}
+::-webkit-scrollbar-thumb,
+.integrations-select-repos::-webkit-scrollbar-thumb {
+    background: var(--moonlight-gray-5) !important;
+    border-radius: var(--scrollbar-chrome-radius) !important;
+}
+::-webkit-scrollbar-thumb:hover,
+.integrations-select-repos::-webkit-scrollbar-thumb:hover {
+    background: var(--moonlight-blue) !important;
+}
